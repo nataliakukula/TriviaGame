@@ -1,4 +1,4 @@
-//Create an ivent that waits until the DOM is loaded:
+//Create an ivent listener that waits until the DOM is loaded:
 $(document).ready(function () {
     //Create an array of objects to store your data:
     var triviaData = [
@@ -95,7 +95,7 @@ $(document).ready(function () {
     var correctCount;
     var incorrectCount;
     var unansweredCount;
-    var maxTime = 10;
+    var maxTime = 30;
     var intervalId;
 
     //Hide html elements:
@@ -116,11 +116,12 @@ $(document).ready(function () {
         $("#timer").show();
         displayQuestion();
     });
-    //Create a function to dispay four buttons:
+    //Create a function to dispays the question:
     function displayQuestion() {
         $("#question").text(triviaData[questionIndex].question);
         timer();
         dataDiv.empty();
+        //And four buttons:
         for (var i = 0; i < triviaData[questionIndex].options.length; i++) {
             optionButton = $("<button>");
             optionButton.addClass("btn btn-outline-dark btn-lg btn-block option");
@@ -164,7 +165,7 @@ $(document).ready(function () {
             });
         };
     };
-    //Set a timeout function that will clear the anwser and show the new set of buttons
+    //Set a timeout function that will clear the anwser and show the new set of buttons:
     function nextQuestion() {
 
         var rightAnswer = $("<p>");
@@ -176,14 +177,14 @@ $(document).ready(function () {
         image.html("<img src=" + triviaData[questionIndex].image + " alt='Moving on to the next!'>");
         dataDiv.append(image);
 
-        showAnswer = setTimeout(displayQuestion, 4000);
-        maxTime = 10;
+        showAnswer = setTimeout(displayQuestion, 5000);
+        maxTime = 30;
 
         console.log("Question index: ", questionIndex);
 
         if (questionIndex === (triviaData.length - 1)) {
             clearTimeout(showAnswer);
-            setTimeout(endTrivia, 4000);
+            setTimeout(endTrivia, 5000);
         };
     };
     //Create a function that decrements time and displays it for the player:

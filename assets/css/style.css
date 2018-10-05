@@ -1,7 +1,7 @@
 body {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-color: #333;
     color: orange;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font: bolder;
 }
 
@@ -14,23 +14,25 @@ p{
 }
 
 .rounded-circle {
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     height: 320px;
     width: auto;
-    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 img {
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     height: 230px;
     width: auto;
-    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .container {
-    margin-top: 20px;
-    height: 620px;
-    width:100%;
     background-image: url("../images/background2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 800px;
     font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    height: 620px;
+    width:100%;
 }
 
 .option {
@@ -38,10 +40,10 @@ img {
 }
 
 #game-start {
-    font-size: 20px;
     box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: orange;
+    font-size: 20px;
 }
 
 #timer {
