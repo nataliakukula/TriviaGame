@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <title>Chicago Trivia</title>
+</head>
+
+<body>
+    <div class="container text-center border border-dark">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-3">Chicago Facts Trivia</h1>
+            </div>
+        </div>
+        <div class="row gif">
+            <div class="col-md-12"><img class="border border-dark rounded-circle" src="https://media.giphy.com/media/3ohs88j0jPszpGCbYY/giphy.gif"
+                    alt="Click to start"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="question"></h3>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12" id="timer">Time remaining: <span id="seconds"></span> seconds</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 trivia-data"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="correct-answers"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="incorrect-answers"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="unanswered"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><button class="btn btn-dark" id="game-start">START</button></div>
+        </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
